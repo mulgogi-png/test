@@ -1,0 +1,49 @@
+<!doctype html>
+
+
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            가채점표에옮겨적기연습
+        </title>
+    </head>
+    <body>
+        <h1>
+            가채점표에옮겨적기연습프로그램
+        </h1>
+        <h2>버전0.0.1</h2>
+        <h5>
+            자동을 누르고 잠시 기다리면 자동 넘기기가 실행됩니다.<br>
+            자동 넘기기 실행 중엔 간격 시간을 바꿔도 적용되지 않습니다.<br>
+            정답 보기를 누르면 답안지 모양 아래에 정답이 나타납니다.<br>
+            화면에 나타나는 정답은 넘기기를 눌렀거나 자동 넘기기를 작동시켰더라도 자동으로 갱신되지 않습니다.<br>
+        </h5>
+            간격 시간 설정 <input type="range" id="a" name="ages" min="1" max="50" step="1" value = "17" oninput="myChange()"><span id="time">1.7</span>초
+
+        <br>
+        <button onclick="myFunction()">넘기기</button><button id="auto"onclick="myAuto()">자동</button><button id="stop"onclick="myStop()"style="display:none">중지</button><button id="btnAnswer" onclick="myAnswer()">정답 보기</button><button onclick="myDelete()">초기화</button>
+<br>
+
+<div style="line-height:0%; font-size:12px; font-family:돋움;">
+    <img src="images/no1.png"><img id="1" src="images/marked1.png"><br>
+    <img src="images/no2.png"><img id="2" src="images/marked2.png"><br>
+    <img src="images/no3.png"><img id="3" src="images/marked3.png"><br>
+    <img src="images/no4.png"><img id="4" src="images/marked4.png"><br>
+    <img src="images/no5.png"><img id="5" src="images/marked5.png"><br>
+    <img src="images/line.png"><br>
+ </div>
+
+ <br>
+ <span id = answer style="display:none"></span>
+
+
+
+
+
+
+
+
+        <script src="app.js"></script>
+    </body>
+</html>
